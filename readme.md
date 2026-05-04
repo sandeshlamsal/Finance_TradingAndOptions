@@ -210,6 +210,81 @@ TAX COMPARISON BY ACCOUNT
 ```
 
 
+## Recommended Web Platforms for Trading
+
+Choosing the right platform depends on your trading style. Below are the most widely used web portals grouped by purpose, along with what each one is best for.
+
+
+### Brokerage Platforms (Buy, Sell, and Manage Positions)
+
+Fidelity (https://www.fidelity.com) is one of the largest brokers in the US and a great starting point if you already have a 401k there. Fidelity offers Active Trader Pro, a downloadable desktop platform with real-time quotes, advanced charting, and options trading tools. You can apply for options approval and open a Roth IRA or taxable brokerage account directly from your existing Fidelity login.
+
+TD Ameritrade / Thinkorswim (https://www.tdameritrade.com) is considered the gold standard platform for active traders and options traders. Thinkorswim offers paper trading, backtesting, advanced options analysis, and one of the best charting experiences available for free. TD Ameritrade has been acquired by Charles Schwab, but Thinkorswim remains available.
+
+Tastytrade (https://www.tastytrade.com) is built specifically for options and futures traders. It displays probability of profit, buying power used, and portfolio-level Greeks at a glance. The platform is streamlined for high-frequency options traders who sell premium and manage spreads regularly.
+
+Interactive Brokers (https://www.interactivebrokers.com) is preferred by professional and high-volume traders due to its very low commissions, access to global markets, and powerful risk management tools. It has a steeper learning curve but offers the most flexibility for serious traders.
+
+Robinhood (https://www.robinhood.com) is a beginner-friendly mobile-first platform with commission-free trading. It supports stocks, ETFs, and basic options strategies. It is best for beginners getting started with small accounts, though it lacks the advanced tools needed for serious active trading.
+
+
+### Charting and Technical Analysis
+
+TradingView (https://www.tradingview.com) is the most popular charting platform among retail traders worldwide. It runs entirely in the browser and offers hundreds of technical indicators, drawing tools, custom scripts, and a community where traders share ideas and setups. The free tier is very capable and a great starting point for learning technical analysis.
+
+Thinkorswim Charts (https://www.thinkorswim.com) is available as part of the TD Ameritrade platform and is one of the most powerful desktop charting tools available. It supports custom indicators, scan alerts, and OnDemand mode for replaying historical price action.
+
+Finviz (https://www.finviz.com) is a free stock screener and heatmap tool that lets you filter stocks by technical patterns, volume, price performance, sector, and fundamentals. It is widely used for finding day trading and swing trading candidates quickly.
+
+
+### Options Analysis and Strategy
+
+OptionStrat (https://www.optionstrat.com) is a web-based options strategy visualizer. You can build any options trade, see the profit and loss diagram, adjust assumptions about stock price and volatility, and immediately understand your risk and reward before placing the trade. It is especially useful for beginners learning how spreads and multi-leg strategies work.
+
+Market Chameleon (https://www.marketchameleon.com) provides deep options data including implied volatility history, earnings implied moves, options flow, and strategy analysis. It is a powerful research tool for traders who want to understand volatility patterns around earnings and key events.
+
+Unusual Whales (https://www.unusualwhales.com) tracks large and unusual options activity across the market. When institutions or well-informed traders place unusually large options bets, this platform surfaces those trades. Many traders use unusual options flow as a signal or confirmation for their own trades.
+
+
+### News and Market Sentiment
+
+Benzinga Pro (https://www.benzinga.com) delivers real-time market news, earnings alerts, and analyst upgrades and downgrades. The paid tier includes a news squawk box that reads alerts aloud, which is useful for day traders who need to react to news instantly.
+
+Yahoo Finance (https://www.finance.yahoo.com) is a free and widely used resource for checking stock quotes, earnings calendars, financial statements, and basic news. It is a good starting point for researching companies before trading.
+
+Earnings Whispers (https://www.earningswhispers.com) focuses specifically on earnings announcements, showing consensus estimates, whisper numbers, and historical earnings reactions. Options traders use this heavily to plan trades around earnings events.
+
+
+### Trade Journaling
+
+TraderVue (https://www.tradervue.com) is a dedicated trade journaling platform where you can import your trades from most brokers, review your performance statistics, and identify patterns in your wins and losses. Consistent journaling is one of the most important habits a trader can build.
+
+Tradervault (https://www.tradervault.com) is a similar journaling platform with a focus on visual trade review and performance analytics. It supports stocks, options, and futures traders.
+
+
+### Learning and Community
+
+Investopedia (https://www.investopedia.com) is the most comprehensive free educational resource for trading and investing. It covers everything from basic definitions to advanced options strategies with clear explanations and examples. The Investopedia Stock Simulator also lets you practice trading with virtual money.
+
+Reddit communities such as r/options, r/Daytrading, and r/stocks (https://www.reddit.com) are active communities where traders share ideas, strategies, and trade reviews. The quality varies, but these communities are a useful resource for learning from other retail traders and staying current on market sentiment.
+
+```
+PLATFORM SELECTION GUIDE
+
+  Goal                        Recommended Platform
+  --------------------------  ----------------------------------------
+  Manage 401k / Retirement    fidelity.com
+  Learn to trade options      tastytrade.com + optionstrat.com
+  Advanced charting           tradingview.com or thinkorswim.com
+  Find trade setups           finviz.com
+  Track unusual options flow  unusualwhales.com
+  Research before trading     marketchameleon.com + finance.yahoo.com
+  Journal and improve         tradervue.com
+  Learn concepts              investopedia.com
+  Paper trade for free        thinkorswim.com (OnDemand mode)
+```
+
+
 ## Things to Consider for Trading
 
 Before risking real money, there are several important factors every trader should consider.
