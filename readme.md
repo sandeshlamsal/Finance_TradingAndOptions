@@ -16,6 +16,19 @@ Trading, on the other hand, involves holding positions for much shorter periods,
 
 In summary, investing is about patience and fundamentals while trading is about timing and technicals. Many people combine both approaches, investing their core portfolio while actively trading a smaller portion.
 
+```
+INVESTING vs TRADING
+
+  INVESTING                          TRADING
+  ---------                          -------
+  Buy & Hold                         Buy & Sell Quickly
+  Months / Years                     Minutes / Days / Weeks
+  Fundamentals (earnings, growth)    Technicals (charts, patterns)
+  Lower Risk                         Higher Risk
+  Long-term capital gains tax        Short-term ordinary income tax
+  Example: Buy AAPL, hold 5 years    Example: Buy AAPL at open, sell by noon
+```
+
 
 ## Types of Trading
 
@@ -34,6 +47,19 @@ Futures Trading involves contracts to buy or sell a specific asset (like the S&P
 Forex Trading is the buying and selling of currency pairs such as EUR/USD or GBP/JPY. The forex market is the largest and most liquid market in the world, operating 24 hours a day, five days a week. Forex traders profit from changes in exchange rates and often use significant leverage.
 
 Algorithmic and Quantitative Trading uses computer programs to execute trades based on predefined rules or statistical models. This style requires programming knowledge (often Python or C++) and the ability to backtest strategies on historical data before deploying them with real capital.
+
+```
+TYPES OF TRADING — TIME HORIZON
+
+  Seconds  |-- Algo/HFT --|
+  Minutes  |-- Day Trading --------------|
+  Days     |              |-- Swing Trading ------------|
+  Weeks    |              |              |-- Options (short-term) ----|
+  Months   |              |              |-- Futures / Forex ---------|
+  Years    |              |              |              |-- Investing ---|
+
+  <-- More Active / Higher Risk                Less Active / Lower Risk -->
+```
 
 
 ## Day Trading vs Options Trading
@@ -63,6 +89,36 @@ Day trading requires you to be actively watching the screen during market hours 
 Options trading requires less capital to control the same number of shares, since you pay a premium rather than buying the shares outright. However, options lose value over time due to theta decay, meaning even if the stock stays flat, a long option position slowly loses value. Options also expire, so being right about the direction but wrong about the timing can still result in a full loss of the premium paid. Selling options (like the covered call example) allows you to collect premium and profit from time decay, which is a strategy not available to pure stock or day traders.
 
 In short, day trading rewards speed, discipline, and reading intraday price action. Options trading rewards understanding of probability, volatility, and strategy construction. Many experienced traders eventually learn both, using day trading for high-conviction directional moves and options for income generation, hedging, and trades where they want defined and limited risk.
+
+```
+DAY TRADE EXAMPLE (AAPL Stock)
+
+  Price
+  $183 |                          * SELL (+$300 profit)
+       |                     *
+  $180 |   * BUY        *
+       |          *
+  $178 |                               * STOP LOSS (-$200 if hit)
+       |---------------------------------------------> Time (9:30am - 11am)
+
+  Risk: Unlimited if no stop loss set
+  Reward: Scales 1:1 with stock price move
+
+
+OPTIONS TRADE EXAMPLE (AAPL Call)
+
+  Buy 1 Call Contract  |  Strike: $180  |  Premium: $3.00  |  Cost: $300
+
+  At Expiration:
+  AAPL = $175  -->  Option expires worthless  -->  Loss: -$300 (max loss)
+  AAPL = $180  -->  Option expires worthless  -->  Loss: -$300 (max loss)
+  AAPL = $183  -->  Option worth $3.00        -->  Breakeven
+  AAPL = $185  -->  Option worth $5.00        -->  Profit: +$200
+  AAPL = $190  -->  Option worth $10.00       -->  Profit: +$700
+
+  Risk: Limited to $300 (premium paid)
+  Reward: Unlimited above breakeven ($183)
+```
 
 
 ## Requirements for Trading in US (Texas)
@@ -97,6 +153,61 @@ For screening stocks and unusual options activity, Finviz is a free stock screen
 For trade journaling, keeping a detailed log of every trade is essential for improvement. TraderVue and Tradervault are dedicated trading journal platforms. Many traders also use Excel or Notion to track their entries, exits, reasoning, and emotions.
 
 For backtesting strategies, Thinkorswim's OnDemand feature allows paper trading on historical data. Python-based libraries such as backtrader and vectorbt allow more sophisticated quantitative backtesting for those comfortable with coding.
+
+
+## Retirement Accounts vs Active Trading Accounts
+
+Not all accounts are created equal. Where you hold your money has a major impact on what you can do with it, how it is taxed, and how it grows over time. Understanding the difference between retirement accounts and active trading accounts is essential before putting capital to work.
+
+A 401k is an employer-sponsored retirement account that allows you to contribute pre-tax dollars, reducing your taxable income today. The money grows tax-deferred, meaning you pay taxes only when you withdraw in retirement. Fidelity is one of the most common 401k providers. Inside a 401k, your investment options are typically limited to a menu of mutual funds and ETFs selected by your employer. Active trading, options strategies, and individual stock picking are generally not available. The best approach inside a 401k is long-term, low-cost index fund investing. Fidelity's FXAIX, which tracks the S&P 500, has an expense ratio near zero and has historically delivered strong long-term returns. Target Date Funds such as Fidelity Freedom 2050 are another popular choice as they automatically shift from aggressive to conservative allocations as your retirement date approaches. The key advantage of a 401k is the tax deferral and, if your employer offers it, the matching contribution, which is essentially free money and should always be maximized first.
+
+A Traditional IRA is an individual retirement account you open yourself, independent of your employer. Like a 401k, contributions may be tax-deductible and growth is tax-deferred. Annual contribution limits are lower than a 401k. A Roth IRA works differently: contributions are made with after-tax dollars, but all growth and qualified withdrawals in retirement are completely tax-free. The Roth IRA is particularly powerful for younger investors or those who expect to be in a higher tax bracket in retirement. Fidelity offers both Traditional and Roth IRAs. Unlike a 401k, an IRA at Fidelity gives you access to individual stocks, ETFs, and in some cases options trading at certain approval levels. Selling covered calls and cash-secured puts is generally permitted in an IRA, making it a useful account for income-generating options strategies while keeping gains sheltered from taxes.
+
+A taxable brokerage account is a standard investment account with no tax advantages and no contribution limits. This is where active trading, day trading, and full options strategies including spreads and buying calls and puts take place. Profits are subject to capital gains tax, short-term if held under one year and long-term if held over one year. In Texas there is no state income tax, which reduces the overall tax burden compared to most other states. A taxable account offers the most flexibility: you can trade anything, withdraw at any time, and use the full range of options strategies once approved by your broker.
+
+The recommended approach for most people is to treat these accounts as layers. First, contribute enough to your 401k to capture the full employer match. Second, max out a Roth IRA each year for tax-free long-term growth. Third, use a taxable brokerage account for any active trading or strategies beyond what retirement accounts allow. This structure balances long-term wealth building through tax-advantaged compounding with the flexibility to actively trade in a separate account without disrupting your retirement savings.
+
+Example with Fidelity:
+
+If you have a 401k at Fidelity through your employer, you might allocate it entirely to FXAIX for low-cost S&P 500 exposure and let it compound over decades. Separately, you could open a Fidelity Roth IRA and use it to sell covered calls on stocks you hold long-term, collecting premium tax-free. Then, in a Fidelity taxable brokerage account, you could actively trade options spreads, day trade high-momentum stocks, or experiment with swing trading strategies. Each account serves a different purpose, and keeping them separated helps you stay disciplined and organized in your overall financial plan.
+
+Note: This section is for educational purposes only and does not constitute financial advice. Consult a licensed financial advisor or tax professional before making decisions about your retirement accounts or investment strategy.
+
+```
+ACCOUNT STRUCTURE — RECOMMENDED LAYERED APPROACH
+
+  +---------------------------------------------------------------+
+  |  LAYER 1: 401k (Fidelity / Employer)                          |
+  |  - Pre-tax contributions, tax-deferred growth                 |
+  |  - Limited to mutual funds / ETFs (e.g. FXAIX)               |
+  |  - Contribute enough to get full employer match FIRST         |
+  +---------------------------------------------------------------+
+           |
+           v
+  +---------------------------------------------------------------+
+  |  LAYER 2: Roth IRA (Fidelity)                                 |
+  |  - After-tax contributions, tax-FREE growth                   |
+  |  - Access to stocks, ETFs, covered calls, cash-secured puts   |
+  |  - Max this out annually after 401k match                     |
+  +---------------------------------------------------------------+
+           |
+           v
+  +---------------------------------------------------------------+
+  |  LAYER 3: Taxable Brokerage Account (Fidelity)                |
+  |  - No contribution limits, no tax advantages                  |
+  |  - Full access: day trading, options spreads, swing trading   |
+  |  - Use for active trading after retirement layers are funded  |
+  +---------------------------------------------------------------+
+
+
+TAX COMPARISON BY ACCOUNT
+
+  Account       | Contribution | Growth        | Withdrawal
+  --------------|--------------|---------------|------------------
+  401k          | Pre-tax      | Tax-deferred  | Taxed as income
+  Roth IRA      | After-tax    | Tax-FREE      | Tax-FREE
+  Taxable Acct  | After-tax    | Taxed yearly  | Capital gains tax
+```
 
 
 ## Things to Consider for Trading
